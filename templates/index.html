@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindergarten Flash Cards</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <button id="dice-roll" class="dice-roll">🎲</button>
+        <div class="flash-card">
+            <div class="card-content">
+                <div class="word-display" id="word-display"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="prev-btn" class="nav-btn">&lt;</button>
+            <button id="audio-btn" class="audio-btn">🔊</button>
+            <button id="next-btn" class="nav-btn">&gt;</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
